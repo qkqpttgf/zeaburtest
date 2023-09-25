@@ -1,3 +1,5 @@
+<IfModule mod_rewrite.c>
 RewriteEngine On
-# RewriteCond $1 !^(.well-known)
+RewriteCond $1 !^(.well-known)
 RewriteRule ^(.*) index.php?/$1 [L]
+</IfModule>
